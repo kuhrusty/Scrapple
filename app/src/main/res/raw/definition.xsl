@@ -39,21 +39,30 @@
 
 
 <xsl:template match="def/dt">
-  <!--  how to replace <it> with <em> ? -->
-<!--  <xsl:apply-templates select="@*|node()"/> -->
-  <dd><xsl:value-of select="."/></dd>
+  <dd>
+    <xsl:apply-templates name="flarp" select="@*|node()"/>
+  </dd>
 </xsl:template>
 
-<!--
-<xsl:template match="def/it">
-  <em><xsl:apply-templates select="@*|node()" /></em>
+
+<xsl:template name="flarp">
+  <xsl:copy>
+    <xsl:apply-templates select="@*|node()"/>
+  </xsl:copy>
 </xsl:template>
--->
-<!--
+
+
+<xsl:template match="vi">
+  <xsl:text> &#8226; </xsl:text>
+  <xsl:apply-templates name="flarp" select="@*|node()"/>
+</xsl:template>
+
+
 <xsl:template match="it">
-  <em><xsl:apply-templates select="@*|node()"/></em>
+  <em>
+    <xsl:value-of select="."/>
+  </em>
 </xsl:template>
--->
 
 
 </xsl:stylesheet>
