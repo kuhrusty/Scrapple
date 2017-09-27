@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<entry_list version="1.0">
+<!--
+	<entry id="fish[1]">
+	  <ew>fish</ew>
+	  <hw hindex="1">fish</hw>
+	  <pr>ˈfish</pr>
+	  <fl>noun</fl>
+	  <in><il>plural</il> <if>fish</if> <il>or</il> <if>fish*es</if></in>
+	  <lb>often attributive</lb>
+	  <et>Middle English, from Old English <it>fisc;</it> akin to Old High German <it>fisc</it> fish, Latin <it>piscis</it></et>
+	  <def>
+	    <date>before 12th century</date>
+	    <sn>1 a</sn>
+	    <dt>:an aquatic animal <un>usually used in combination <vi>star<it>fish</it></vi> <vi>cuttle<it>fish</it></vi></un></dt>
+	    <sn>b</sn>
+	    <dt>:any of numerous cold-blooded strictly aquatic craniate vertebrates that include the bony <fw>fishes</fw> and usually the cartilaginous and jawless fishes and that have typically an elongated somewhat spindle-shaped body terminating in a broad caudal fin, limbs in the form of fins when present at all, and a 2-chambered heart by which blood is sent through thoracic gills to be oxygenated</dt>
+	    <sn>2</sn>
+	    <dt>:the flesh of fish used as food</dt>
+	    <sn>3 a</sn>
+	    <dt>:a person who is caught or is wanted (as in a criminal investigation)</dt>
+	    <sn>b</sn>
+	    <dt>:<sx>fellow</sx> <sx>person</sx> <vi>an odd <it>fish</it></vi></dt>
+	    <sn>c</sn>
+	    <dt>:<sx>sucker <sxn>5a</sxn></sx></dt>
+	    <sn>4</sn>
+	    <dt> :something that resembles a fish: as</dt>
+	    <sn>a</sn>
+	    <sin><spl>plural</spl></sin>
+	    <slb>capitalized</slb>
+	    <dt>:<sx>pisces <sxn>1</sxn></sx></dt>
+	    <sd>also</sd>
+	    <dt>:<sx>pisces <sxn>2a</sxn></sx></dt>
+	    <sn>b</sn>
+	    <dt>:<sx>torpedo <sxn>2b</sxn></sx> </dt>
+	  </def>
+	  <uro><ure>fish*less</ure><sound><wav>fish0002.wav</wav><wpr>!fish-lus</wpr></sound> <pr>ˈfish-ləs</pr> <fl>adjective</fl></uro>
+	  <uro><ure>fish*like</ure><sound><wav>fish0003.wav</wav><wpr>!fish-+lIk</wpr></sound> <pr>-ˌlīk</pr> <fl>adjective</fl></uro>
+	  <dro>
+	    <drp>fish out of water</drp>
+	    <def>
+	      <dt>:a person who is in an unnatural or uncomfortable sphere or situation</dt>
+	    </def>
+	  </dro>
+	  <dro>
+	    <drp>fish to fry</drp>
+	    <def>
+	      <dt>:concerns or interests to pursue <un>usually used with <it>other</it></un></dt>
+	    </def>
+	  </dro>
+	  <dro>
+	    <drp>neither fish nor fowl</drp>
+	    <def>
+	      <dt>:one that does not belong to a particular class or category</dt>
+	    </def>
+	  </dro>
+	  <art><bmp>fish.bmp</bmp><cap>fish 2a: <it>1 </it>mandible, <it>2 </it>nasal opening, <it>3 </it>eye, <it>4 </it>cheek, <it>5 </it>operculum, <it>6 </it>dorsal fins, <it>7 </it>lateral line, <it>8 </it>caudal fin, <it>9 </it>scales, <it>10 </it>anal fin, <it>11 </it>anus, <it>12 </it>pectoral fin, <it>13 </it>pelvic fin, <it>14 </it>maxilla, <it>15 </it>premaxilla, <it>16 </it>upper jaw</cap></art>
+	</entry>
+
+
+
+	<entry id="fish[1]">
+	  <ew>fish</ew>
+	  <subj>FD-2#ZO-1#ZF-1b#OC-4a#ML-4b#LW-3a</subj>
+	  <art><artref id="fish"/><capt>fish 1b: <it>1</it> mandible, <it>2</it> nasal opening, <it>3</it> eye, <it>4</it> cheek, <it>5</it> operculum, <it>6</it> dorsal fins, <it>7</it> lateral line, <it>8</it> caudal fin, <it>9</it> scales, <it>10</it> anal fin, <it>11</it> anus, <it>12</it> pectoral fin, <it>13</it> pelvic fin, <it>14</it> maxilla, <it>15</it> premaxilla, <it>16</it> upper jaw</capt><dim>210,22</dim></art>
+	  <hw hindex="1">fish</hw>
+	  <sound><wav>fish0001.wav</wav><wpr>!fish</wpr></sound>
+	  <pr>ˈfish</pr>
+	  <fl>noun</fl>
+	  <in><il>plural</il> <if>fish</if> <il>or</il> <if>fish*es</if></in>
+	  <lb>often attributive</lb>
+	  <et>Middle English, from Old English <it>fisc;</it> akin to Old High German <it>fisc</it> fish, Latin <it>piscis</it></et>
+	  <def>
+	    <date>before 12th century</date>
+	    <sn>1 a</sn>
+	    <dt>:an aquatic animal <un>usually used in combination <vi>star<it>fish</it></vi> <vi>cuttle<it>fish</it></vi></un></dt>
+	    <sn>b</sn>
+	    <dt>:any of numerous cold-blooded strictly aquatic craniate vertebrates that include the bony <fw>fishes</fw> and usually the cartilaginous and jawless fishes and that have typically an elongated somewhat spindle-shaped body terminating in a broad caudal fin, limbs in the form of fins when present at all, and a 2-chambered heart by which blood is sent through thoracic gills to be oxygenated</dt>
+	    <sn>2</sn>
+	    <dt>:the flesh of fish used as food</dt>
+	    <sn>3 a</sn>
+	    <dt>:a person who is caught or is wanted (as in a criminal investigation)</dt>
+	    <sn>b</sn>
+	    <dt>:<sx>fellow</sx> <sx>person</sx> <vi>an odd <it>fish</it></vi></dt>
+	    <sn>c</sn>
+	    <dt>:<sx>sucker <sxn>5a</sxn></sx></dt>
+	    <sn>4</sn>
+	    <dt> :something that resembles a fish: as</dt>
+	    <sn>a</sn>
+	    <sin><spl>plural</spl></sin>
+	    <slb>capitalized</slb>
+	    <dt>:<sx>pisces <sxn>1</sxn></sx></dt>
+	    <sd>also</sd>
+	    <dt>:<sx>pisces <sxn>2a</sxn></sx></dt>
+	    <sn>b</sn>
+	    <dt>:<sx>torpedo <sxn>2b</sxn></sx> </dt>
+	  </def>
+	  <uro><ure>fish*less</ure><sound><wav>fish0002.wav</wav><wpr>!fish-lus</wpr></sound> <pr>ˈfish-ləs</pr> <fl>adjective</fl></uro>
+	  <uro><ure>fish*like</ure><sound><wav>fish0003.wav</wav><wpr>!fish-+lIk</wpr></sound> <pr>-ˌlīk</pr> <fl>adjective</fl></uro>
+	  <dro>
+	    <drp>fish out of water</drp>
+	    <def>
+	      <dt>:a person who is in an unnatural or uncomfortable sphere or situation</dt>
+	    </def>
+	  </dro>
+	  <dro>
+	    <drp>fish to fry</drp>
+	    <def>
+	      <dt>:concerns or interests to pursue <un>usually used with <it>other</it></un></dt>
+	    </def>
+	  </dro>
+	  <dro>
+	    <drp>neither fish nor fowl</drp>
+	    <def>
+	      <dt>:one that does not belong to a particular class or category</dt>
+	    </def>
+	  </dro>
+	  <art><bmp>fish.bmp</bmp><cap>fish 2a: <it>1 </it>mandible, <it>2 </it>nasal opening, <it>3 </it>eye, <it>4 </it>cheek, <it>5 </it>operculum, <it>6 </it>dorsal fins, <it>7 </it>lateral line, <it>8 </it>caudal fin, <it>9 </it>scales, <it>10 </it>anal fin, <it>11 </it>anus, <it>12 </it>pectoral fin, <it>13 </it>pelvic fin, <it>14 </it>maxilla, <it>15 </it>premaxilla, <it>16 </it>upper jaw</cap></art>
+	</entry>
+-->
+
+	<entry id="fish[1]"><ew>fish</ew><subj>FD-2#ZO-1#ZF-1b#OC-4a#ML-4b#LW-3a</subj><art><artref id="fish"/><capt>fish 1b: <it>1</it> mandible, <it>2</it> nasal opening, <it>3</it> eye, <it>4</it> cheek, <it>5</it> operculum, <it>6</it> dorsal fins, <it>7</it> lateral line, <it>8</it> caudal fin, <it>9</it> scales, <it>10</it> anal fin, <it>11</it> anus, <it>12</it> pectoral fin, <it>13</it> pelvic fin, <it>14</it> maxilla, <it>15</it> premaxilla, <it>16</it> upper jaw</capt><dim>210,22</dim></art><hw hindex="1">fish</hw><sound><wav>fish0001.wav</wav><wpr>!fish</wpr></sound><pr>ˈfish</pr><fl>noun</fl><in><il>plural</il> <if>fish</if> <il>or</il> <if>fish*es</if></in><lb>often attributive</lb><et>Middle English, from Old English <it>fisc;</it> akin to Old High German <it>fisc</it> fish, Latin <it>piscis</it></et><def><date>before 12th century</date> <sn>1 a</sn> <dt>:an aquatic animal <un>usually used in combination <vi>star<it>fish</it></vi> <vi>cuttle<it>fish</it></vi></un></dt>  <sn>b</sn> <dt>:any of numerous cold-blooded strictly aquatic craniate vertebrates that include the bony <fw>fishes</fw> and usually the cartilaginous and jawless fishes and that have typically an elongated somewhat spindle-shaped body terminating in a broad caudal fin, limbs in the form of fins when present at all, and a 2-chambered heart by which blood is sent through thoracic gills to be oxygenated</dt> <sn>2</sn> <dt>:the flesh of fish used as food</dt> <sn>3 a</sn> <dt>:a person who is caught or is wanted (as in a criminal investigation)</dt>  <sn>b</sn> <dt>:<sx>fellow</sx> <sx>person</sx> <vi>an odd <it>fish</it></vi></dt>  <sn>c</sn> <dt>:<sx>sucker <sxn>5a</sxn></sx></dt> <sn>4</sn> <dt> :something that resembles a fish: as</dt>  <sn>a</sn> <sin><spl>plural</spl></sin> <slb>capitalized</slb> <dt>:<sx>pisces <sxn>1</sxn></sx></dt> <sd>also</sd> <dt>:<sx>pisces <sxn>2a</sxn></sx></dt>  <sn>b</sn> <dt>:<sx>torpedo <sxn>2b</sxn></sx> </dt></def><uro><ure>fish*less</ure><sound><wav>fish0002.wav</wav><wpr>!fish-lus</wpr></sound> <pr>ˈfish-ləs</pr> <fl>adjective</fl></uro><uro><ure>fish*like</ure><sound><wav>fish0003.wav</wav><wpr>!fish-+lIk</wpr></sound> <pr>-ˌlīk</pr> <fl>adjective</fl></uro><dro><drp>fish out of water</drp> <def><dt>:a person who is in an unnatural or uncomfortable sphere or situation</dt></def></dro><dro><drp>fish to fry</drp> <def><dt>:concerns or interests to pursue <un>usually used with <it>other</it></un></dt></def></dro><dro><drp>neither fish nor fowl</drp> <def><dt>:one that does not belong to a particular class or category</dt></def></dro><art><bmp>fish.bmp</bmp><cap>fish 2a: <it>1 </it>mandible, <it>2 </it>nasal opening, <it>3 </it>eye, <it>4 </it>cheek, <it>5 </it>operculum, <it>6 </it>dorsal fins, <it>7 </it>lateral line, <it>8 </it>caudal fin, <it>9 </it>scales, <it>10 </it>anal fin, <it>11 </it>anus, <it>12 </it>pectoral fin, <it>13 </it>pelvic fin, <it>14 </it>maxilla, <it>15 </it>premaxilla, <it>16 </it>upper jaw</cap></art></entry>
+	<entry id="fish[2]"><ew>fish</ew><subj>HF-vi1#HFvt1#HF-vt2a</subj><hw hindex="2">fish</hw><fl>verb</fl><def><vt>intransitive verb</vt><date>before 12th century</date> <sn>1</sn> <dt>:to attempt to catch fish</dt> <sn>2</sn> <dt>:to seek something by roundabout means <vi><it>fish</it><it>ing</it> for a compliment</vi></dt> <sn>3 a</sn> <dt>:to search for something underwater <vi><it>fish</it> for pearls</vi></dt>  <sn>b</sn> <dt>:to engage in a search by groping or feeling <vi><it>fish</it><it>ing</it> around in her purse for her keys</vi></dt><vt>transitive verb</vt> <sn>1 a</sn> <dt>:to try to catch fish in</dt>  <sn>b</sn> <dt>:to fish with :use (as a boat, net, or bait) in <fw>fishing</fw></dt> <sn>2 a</sn> <dt>:to go fishing for <vi><it>fish</it> salmon</vi></dt>  <sn>b</sn> <dt>:to pull or draw as if fishing <vi><it>fish</it><it>ed</it> the ball from under the car</vi> <vi><it>fish</it> wires through a conduit</vi></dt></def><uro><ure>fish*abil*i*ty</ure><sound><wav>fish0004.wav</wav><wpr>+fi-shu-!bi-lu-tE</wpr></sound> <pr>ˌfi-shə-ˈbi-lə-tē</pr> <fl>noun</fl></uro><uro><ure>fish*able</ure><sound><wav>fish0005.wav</wav><wpr>!fi-shu-bul</wpr></sound> <pr>ˈfi-shə-bəl</pr> <fl>adjective</fl></uro><dro><drp>fish or cut bait</drp> <def><dt>:to make a choice between alternatives</dt></def></dro></entry>
+	<entry id="Fish"><ew>Fish</ew><hw>Fish</hw><sound><wav>bixfis03.wav</wav></sound><pr>ˈfish</pr><fl>biographical name</fl><def><dt>Hamilton 1808–1893 Am. statesman</dt></def></entry>
+	<entry id="fish-and-chips"><ew>fish-and-chips</ew><subj>FD</subj><hw>fish–and–chips</hw><sound><wav>fish_a01.wav</wav><wpr>+fi-sh/un-!chips</wpr></sound><pr>ˌfi-shᵊn-ˈchips</pr><fl>noun plural</fl><def><date>1876</date><dt>:fried fish and french fried potatoes</dt></def></entry>
+	<entry id="fish cake"><ew>fish cake</ew><subj>FD</subj><hw>fish cake</hw><fl>noun</fl><def><date>1854</date><dt>:a round fried cake made of shredded fish and mashed potato</dt></def></entry>
+	<entry id="fish duck"><ew>fish duck</ew><subj>ZB</subj><hw>fish duck</hw><fl>noun</fl><def><date>1858</date><dt>:<sx>merganser</sx></dt></def></entry>
+	<entry id="fish-eye"><ew>fish-eye</ew><subj>PX</subj><hw>fish–eye</hw><sound><wav>fish_e01.wav</wav><wpr>!fish-+I</wpr></sound><pr>ˈfish-ˌī</pr><fl>adjective</fl><def><date>1943</date><dt>:being, having, or produced by a wide-angle photographic lens that has a highly curved protruding front, that covers an angle of about 180 degrees, and that gives a circular image</dt></def></entry>
+	<entry id="fish farm"><ew>fish farm</ew><subj>BZ#AH</subj><hw>fish farm</hw><fl>noun</fl><def><date>1865</date><dt>:a commercial facility for raising aquatic animals for human food</dt></def><uro><ure>fish–farm</ure><sound><wav>fish_e02.wav</wav><wpr>!fish-+f@rm</wpr></sound> <pr>ˈfish-ˌfärm</pr> <fl>transitive verb</fl></uro></entry>
+	<entry id="fish finger"><ew>fish finger</ew><subj>FD</subj><hw>fish finger</hw><fl>noun</fl><def><date>1962</date><sl>British</sl><dt>:<sx>fish stick</sx></dt></def></entry>
+	<entry id="fish fry"><ew>fish fry</ew><subj>FD</subj><hw>fish fry</hw><fl>noun</fl><def><date>1824</date> <sn>1</sn> <dt>:a picnic or supper featuring fried fish</dt> <sn>2</sn> <dt>:fried fish</dt></def></entry>
+</entry_list>
