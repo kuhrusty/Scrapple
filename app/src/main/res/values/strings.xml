@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Scrapple</string>
+
+    <!--  @WORD@ and @KEY@ will be replaced with the word-being-looked-up and
+          the API key. -->
+    <string name="m_w_api_url">http://www.dictionaryapi.com/api/v1/references/collegiate/xml/@WORD@?key=@KEY@</string>
+    <string name="search_hint">Word to look up</string>
+
+    <string name="definition_loading">Looking up %1$s...</string>
+    <string name="definition_invalid">%1$s isn\'t a word!</string>
+    <string name="definition_error">Some kind of error occurred.  Sorry!</string>
+</resources>
