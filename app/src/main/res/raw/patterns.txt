@@ -1,0 +1,110 @@
+#  This is the set of patterns which we'll use to generate definitions.  First
+#  we have one or more regular expressions; if the word matches any of those
+#  patterns, one of the indented lines (chosen at random) will be used as the
+#  definition.  (The exception is indented lines starting with "@fl ", which
+#  will be the word's part-of-speech, which defaults to "noun").
+#
+#  These are checked in the order they're listed below, and we quit as soon as
+#  we find a match.
+#
+#  In the definitions, the following substitutions will be performed:
+#
+#  @WORD@
+#          will be replaced with the word being looked up.
+#
+#  @WORD$1@
+#          will be replaced with the first capturing sub-expression (so, if the
+#          expression is ^un(.+), that matches words starting with "un", and the
+#          first capturing sub-expression is everything after "un", so if the
+#          word is "unsnerb", @WORD$1@ will be replaced with "snerb").
+#
+#  @AWORD@
+#          will be replaced with the word being looked up, preceded by "a" or
+#          "an" depending on whether the word starts with a consonant.
+#
+#  @AWORD$1@
+#          same as @AWORD@, but with the first-capturing-subexpression stuff
+#          from @WORD$1@.
+#
+#  ALSO... instead of a regular expression, if a non-indented line starts with
+#  @, then we consider it a mad-lib sort of pattern, and will substitute it into
+#  definitions just like @AWORD$1@ etc.  So, if you want a list of possible cat
+#  names, you might go:
+#
+#    @CATNAME@
+#        Nibbles
+#        Chi-Chi
+#        Steve
+#
+#  and then you can use that in a definition:
+#
+#        A subcutaneous fat deposit on @CATNAME@.
+#
+
+#  Most of these patterns have quite a few dots because we don't want to treat
+#  "un" etc. as prefixes unless the word is long enough.  Otherwise, "derp"
+#  becomes "to remove rp," which is lame.
+^(....+e)d$
+    @fl verb
+    :past tense of @WORD$1@
+
+^un(...+)
+^dis(...+)
+^de(...+)
+    @fl verb
+    :to remove @WORD$1@
+
+^en(...+)
+^in(...+)
+    @fl verb
+    :to fill or swell with @WORD$1@
+
+^re(...+)
+    @fl verb
+    :to @WORD$1@ again
+
+^(...+n)ade$
+    :a beverage prominently featuring @WORD$1@ juice as an ingredient
+
+#  We want the last pattern to match everything else.  Let's say 3/4 of these
+#  will be nouns; the rest will be verbs.
+(.+)
+    :@SILLYNOUN@
+    :@SILLYNOUN@
+    :@SILLYNOUN@
+    :@SILLYVERB@
+
+#  These could've been mixed in with the regular expressions above, but from
+#  here on down are mad-lib substitutions.
+
+@SILLYNOUN@
+    @ACENTURY@ @NAUTICALJOB@ in Spain or Portugal
+    the @MECHANICALBIT@ found in Swingline staplers manufactured between 1927 and 1965
+    an olfactory disturbance of unknown origin
+    one who appreciates either fine wine or fine cheese, but not both simultaneously
+    a roughly spherical chunk of flesh removed by a melon-baller
+    an eye injury which causes the perception of light and dark to be reversed
+
+@SILLYVERB@
+    @fl verb
+    to swing at or hit a flying insect with an improvised weapon such as a shoe, sports racket, or rolled-up newspaper
+    to hit a member of one's foreign exchange host family in the face with a badminton racket, possibly breaking the racket, the face, or both
+
+@ACENTURY@
+    a 17th-century
+    an 18th-century
+    a 19th-century
+    a 20th-century
+
+@NAUTICALJOB@
+    sailor or dock worker
+    sea captain or pirate captain
+    barnacle scraper
+
+@MECHANICALBIT@
+    mainspring housing
+    mainspring housing retaining pin
+    ejection port cutout
+    recoil spring guide rod
+    sear and disconnector pin
+    hand-checkered walnut grips
