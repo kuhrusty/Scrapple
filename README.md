@@ -73,15 +73,3 @@ with this content:
         <!--  your API key goes here  -->
         <string name="m_w_api_key">01234567-89ab-cdef-0123-456789abcdef</string>
     </resources>
-
-### To do
-
-- improve `BogoDictionary.java`
-  - generate multiple entries for a given word
-  - add pronunciation marks & split words into syllables
-- improve `definition.xsl`
-- test behavior of invalid API key
-- proper handling of network connection across app destroy/create
-- handle landscape orientation better; currently it sucks
-- change the color of the text entry field; the hot pink doesn't
-  go at all.
