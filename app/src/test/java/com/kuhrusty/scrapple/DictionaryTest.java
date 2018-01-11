@@ -1,13 +1,5 @@
 package com.kuhrusty.scrapple;
 
-import android.util.Log;
-
-import org.junit.Before;
-import org.junit.runner.RunWith;
-import org.powermock.api.mockito.PowerMockito;
-import org.powermock.core.classloader.annotations.PrepareForTest;
-import org.powermock.modules.junit4.PowerMockRunner;
-
 import java.io.FileNotFoundException;
 
 import static org.junit.Assert.assertEquals;
@@ -19,14 +11,7 @@ import static org.junit.Assert.assertNotNull;
  * <p>
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-@RunWith(PowerMockRunner.class)
-@PrepareForTest({Log.class})
 public class DictionaryTest {
-
-    @Before
-    public void mockLog() throws Exception {
-        PowerMockito.mockStatic(Log.class);
-    }
 
     private static class SynchronousDefinitionListener implements Dictionary.DefinitionListener {
         Definition def = null;
