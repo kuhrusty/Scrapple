@@ -13,7 +13,7 @@ import java.util.Iterator;
  * Implements an onPostExecute() which is common to all of our dictionaries'
  * AsyncTasks.
  */
-public abstract class DictionaryAsyncTask extends AsyncTask<String, Void, String> {
+public abstract class DictionaryAsyncTask extends AsyncTask<String, Void, Definition> {
     private static final String LOGBIT = "DictionaryAsyncTask";
 
     private final String normalizedWord;
@@ -39,12 +39,10 @@ public abstract class DictionaryAsyncTask extends AsyncTask<String, Void, String
      * pass the request on to the next Dictionary in the chain.
      */
     @Override
-    protected void onPostExecute(String result) {
+    protected void onPostExecute(Definition result) {
         if (result != null) {
-            Definition def = new Definition();
-            def.rawXML = result;
             Log.d(LOGBIT, "definitionComplete(\"" + normalizedWord + "\", non-null)");
-            listener.definitionComplete(normalizedWord, def);
+            listener.definitionComplete(normalizedWord, result);
         } else if ((nextDictionary != null) && (nextDictionary.hasNext())) {
             Log.d(LOGBIT, "passing on define(\"" + normalizedWord + "\")");
             nextDictionary.next().define(normalizedWord, nextDictionary, listener);
