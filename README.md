@@ -9,6 +9,8 @@ see, "reunghit" *is* a word!"
 
 Relevant link: https://www.boardgamegeek.com/article/26688666#26688666
 
+For notes on checking out & building this, see [CONTRIBUTING.md].
+
 ### How does it work?
 
 When someone looks up a word, the first thing we do is look it up through the
@@ -56,20 +58,3 @@ and then you can use them in definitions:
 If you make changes to the file, it will probably blow up unit tests in
 `BogoDictionaryTest.java`, but as they say, if you want to make an omelette, you
 have to punch a few chickens in the face.
-
-### API Key
-
-The Merriam-Webster Dictionary API requires an API key, which is free for
-non-commercial use as long as its usage remains below a certain limit, which is
-why I'm not putting my own API key on the Internet.  In order to build & run
-Scrapple, you need to get your own API key from M-W; see
-https://www.dictionaryapi.com/.
-
-Once you've got your key, create a file, `app/src/main/res/values/keys.xml`,
-with this content:
-
-    <?xml version="1.0" encoding="utf-8"?>
-    <resources>
-        <!--  your API key goes here  -->
-        <string name="m_w_api_key">01234567-89ab-cdef-0123-456789abcdef</string>
-    </resources>
