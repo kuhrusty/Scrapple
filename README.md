@@ -9,7 +9,7 @@ see, "reunghit" *is* a word!"
 
 Relevant link: https://www.boardgamegeek.com/article/26688666#26688666
 
-For notes on checking out & building this, see [CONTRIBUTING.md].
+For notes on checking this out & building it, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### How does it work?
 
