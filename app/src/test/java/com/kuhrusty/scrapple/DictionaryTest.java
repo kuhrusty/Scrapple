@@ -32,7 +32,7 @@ public class DictionaryTest {
         dict.define(word, null, sdl);
         //  we expect that to have called definitionComplete() before returning
         assertNotNull(sdl.def);
-        assertNotNull(sdl.def.rawXML);
+        assertNotNull(sdl.def.getRawXML());
 
         String expect = null;
         try {
@@ -45,7 +45,7 @@ public class DictionaryTest {
         //  Ugh, screw with whitespace.
         String es = expect.replaceAll("\\s+", " ");
         es = es.replaceAll("\\> \\<", "><").trim();
-        String gs = sdl.def.rawXML.replaceAll("\\s+", " ");
+        String gs = sdl.def.getRawXML().replaceAll("\\s+", " ");
         gs = gs.replaceAll("\\> \\<", "><").trim();
         assertEquals(es, gs);
     }
