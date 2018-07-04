@@ -49,11 +49,18 @@ public class CacheDictionary implements Dictionary {
         Dictionary td = (next != null) ? next.next() : null;
         if (td != null) {
             Log.d(LOGBIT, "passing on define(\"" + word + "\")");
+            //  Here we pass in a new DefinitionListener; when the sub-dictionary
+            //  completes its definition, it will call the new listener's
+            //  definitionComplete(); we'll cache the result, and notify the
+            //  listener *we* were given.
             td.define(word, next, new DefinitionListener() {
                 @Override
                 public void definitionComplete(String word, Definition def) {
-                    defs.addFirst(new CacheEntry(word, def));
-                    if (defs.size() > MAX_ENTRIES) defs.removeLast();
+                    //  let's only cache non-errors.
+                    if ((def == null) || (!def.isError())) {
+                        defs.addFirst(new CacheEntry(word, def));
+                        if (defs.size() > MAX_ENTRIES) defs.removeLast();
+                    }
                     Log.d(LOGBIT, "definitionComplete(\"" + word + "\", " +
                             ((def != null) ? "non-null" : "null") + ")");
                     listener.definitionComplete(word, def);
