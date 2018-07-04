@@ -2,6 +2,7 @@ package com.kuhrusty.scrapple.dict;
 
 import android.util.Log;
 
+import com.kuhrusty.scrapple.Definition;
 import com.kuhrusty.scrapple.Dictionary;
 import com.kuhrusty.scrapple.Util;
 
@@ -20,7 +21,7 @@ public class NoGoodDictionary implements Dictionary {
         }
 
         @Override
-        protected String doInBackground(String... strings) {
+        protected Definition doInBackground(String... strings) {
             if (isCancelled()) {
                 Log.i(LOGBIT, "doInBackground bailing, isCancelled() " + isCancelled());
                 return null;
