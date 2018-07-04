@@ -101,12 +101,10 @@ public class MainActivity extends AppCompatActivity implements Dictionary.Defini
             styleSheet = Util.snortFileFromRes(getResources(), R.raw.definition);
         }
         try {
-//Log.d(LOGBIT, "ssTemplate == " + ssTemplate);
             if (ssTemplate == null) {
                 Source xsltSource = new StreamSource(new ByteArrayInputStream(styleSheet.getBytes()));
                 TransformerFactory transformerFactory = TransformerFactory.newInstance();
                 ssTemplate = transformerFactory.newTemplates(xsltSource);
-//Log.d(LOGBIT, "after newTemplates(), ssTemplate == " + ssTemplate);
                 //  the API documentation for newTemplates() says it never
                 //  returns null, but I am seeing cases where bad XSLT causes it
                 //  to return null instead of throwing an exception.
@@ -117,7 +115,6 @@ public class MainActivity extends AppCompatActivity implements Dictionary.Defini
             }
             transformer = ssTemplate.newTransformer();
         } catch (TransformerConfigurationException tce) {
-//tce.printStackTrace(System.err);
             Log.e(LOGBIT, "couldn't initialize transformer", tce);
         }
 
@@ -131,12 +128,12 @@ public class MainActivity extends AppCompatActivity implements Dictionary.Defini
         allBadChain.add(cache);
         allBadChain.add(new NoGoodDictionary());
 
-        bogoChain = new ArrayList(3);
+        bogoChain = new ArrayList<>(3);
         bogoChain.add(cache);
         bogoChain.add(mwDict);
         bogoChain.add(bogoDict);
 
-        onlyGoodChain = new ArrayList(2);
+        onlyGoodChain = new ArrayList<>(2);
         onlyGoodChain.add(cache);
         onlyGoodChain.add(mwDict);
 
@@ -164,7 +161,6 @@ public class MainActivity extends AppCompatActivity implements Dictionary.Defini
         iv.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent ev) {
-//Log.d(LOGBIT, "onTouch(view h " + view.getHeight() + ", w " + view.getWidth() + ", ev x " + ev.getX() + ", y " + ev.getY() + " " + ev + ")");
                 if (ev.getY() < (view.getHeight() / 2)) {
                     int x = (int)(ev.getX());
                     int wq = view.getWidth() / 3;
@@ -214,9 +210,10 @@ public class MainActivity extends AppCompatActivity implements Dictionary.Defini
         //  Ughh... hide the keyboard.
         View tv = getCurrentFocus();
         if (tv != null) {
-//Log.d(LOGBIT, "hiding keyboard");
             InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+            if (imm != null) {
+                imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+            }
         }
 
         String ts = word.getText().toString();
@@ -241,20 +238,24 @@ public class MainActivity extends AppCompatActivity implements Dictionary.Defini
     public void definitionComplete(String word, Definition def) {
         Log.d(LOGBIT, "definitionComplete() for \"" + word + "\"");
         String html = null;
-        if ((def == null) || (def.rawXML == null)) {
+        if ((def != null) && def.isError()) {
+            String msg = (def.getError() != null) ? def.getError() :
+                    getResources().getString(def.getErrorResID());
+            html = getResources().getString(R.string.definition_error, msg);
+        } else if ((def == null) || (def.getRawXML() == null)) {
             html = getResources().getString(R.string.definition_invalid, word.toUpperCase());
         } else if (transformer != null) {
             try {
-                html = Util.xmlToHTML(def.rawXML, transformer);
-            } catch (TransformerException e) {
-                //  we'll set an error message below.
-//                e.printStackTrace();
+                html = Util.xmlToHTML(def.getRawXML(), transformer);
+            } catch (TransformerException te) {
+                html = getResources().getString(R.string.definition_error, te.getMessage());
             }
         }
         if (html == null) {
             //  either the XML -> HTML transformation failed, or earlier, we
             //  were unable to create a Transformer.
-            html = getResources().getString(R.string.definition_error);
+            html = getResources().getString(R.string.definition_error,
+                    getResources().getString(R.string.error_unknown));
         }
         definition.loadData(html, "text/html", null);
     }
