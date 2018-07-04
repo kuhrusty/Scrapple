@@ -8,5 +8,10 @@
 
     <string name="definition_loading">Looking up %1$s...</string>
     <string name="definition_invalid">%1$s isn\'t a word!</string>
-    <string name="definition_error">Some kind of error occurred.  Sorry!</string>
+    <string name="definition_error">&lt;font color="red"&gt;&lt;b&gt;Error: %1$s&lt;/b&gt;&lt;/font&gt;</string>
+
+    <string name="error_no_network">No network connection.</string>
+    <string name="error_no_api_key">API key not set.</string>
+    <string name="error_unknown">Unknown error... sorry!</string>
+
 </resources>
