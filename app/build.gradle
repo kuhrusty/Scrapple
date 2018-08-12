@@ -6,8 +6,8 @@ android {
         applicationId "com.kuhrusty.scrapple"
         minSdkVersion 15
         targetSdkVersion 27
-        versionCode 110
-        versionName "1.1"
+        versionCode 111
+        versionName "1.2-dev"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
