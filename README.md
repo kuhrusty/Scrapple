@@ -9,6 +9,8 @@ see, "reunghit" *is* a word!"
 
 Relevant link: https://www.boardgamegeek.com/article/26688666#26688666
 
+YouTube video showing it in action: https://www.youtube.com/watch?v=WjssufweHJc
+
 For notes on checking this out & building it, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### How does it work?
