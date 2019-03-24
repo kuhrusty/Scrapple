@@ -11,6 +11,10 @@
     <string name="definition_error">&lt;font color="red"&gt;&lt;b&gt;Error: %1$s&lt;/b&gt;&lt;/font&gt;</string>
 
     <string name="error_no_network">No network connection.</string>
+    <!--  This is displayed when the M-W API returns a result which isn't XML,
+          but which is longer than we think could be a reasonable error message.
+          It means we don't know what's going on over at M-W.  -->
+    <string name="error_non_xml">We got an unexpected/invalid result from the M-W Dictionary API; if you\'re seeing this message, this is probably a bug.</string>
     <string name="error_no_api_key">API key not set.</string>
     <string name="error_unknown">Unknown error... sorry!</string>
 

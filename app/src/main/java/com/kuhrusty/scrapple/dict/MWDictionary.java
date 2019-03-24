@@ -82,6 +82,31 @@ public class MWDictionary implements Dictionary {
                 URL url = new URL(strings[0]);
                 xml = downloadURL(this, url);
                 if (xml == null) return null;
+
+                //  One issue here is that, for *some* invalid words, M-W
+                //  returns the literal string "Results not found" (no newline),
+                //  rather than valid XML containing a list of suggestions.
+                //  That causes the XML parser to throw an exception (since it's
+                //  not XML!).  I would still like to display exceptions as
+                //  error messages in case we get a real error (like the service
+                //  being temporarily unavailable, or our quota being exceeded,
+                //  etc.), so... let's look specifically for that "Results not
+                //  found" string, and treat any other not-obviously-XML as an
+                //  error message.  This bit is icky and gross.
+                if (!xml.startsWith("<")) {
+                    Log.w(LOGBIT, "we don't think it's XML");
+                    if (xml.equals("Results not found")) {  //  horribly fragile
+                        return null;
+                    } else if (xml.length() < 256) {
+                        //  let's hope it's some intelligible error message;
+                        //  this is pretty dumb.
+                        return new Definition(true, xml);
+                    }
+                    //  we got a big blob of non-XML; what the heck is
+                    //  going on?
+                    return new Definition(R.string.error_non_xml);
+                }
+
                 //  parse the XML to see whether it's a valid word
                 MWXMLHandler handler = new MWXMLHandler();
                 parser.parse(new InputSource(new StringReader(xml)), handler);
