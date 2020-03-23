@@ -218,6 +218,9 @@ public class MainActivity extends AppCompatActivity implements Dictionary.Defini
 
         String ts = word.getText().toString();
         ts = Util.normalizeWord(ts);
+        if (ts.equals("")) {
+            return;
+        }
         List<Dictionary> chain = onlyGoodChain;
         if (allWordsAreBad) {
             chain = allBadChain;
