@@ -5,6 +5,8 @@ format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+- Update M-W API URL from HTTP to HTTPS; their HTTP endpoint started
+  giving 301s.
 - Update versions on some dependencies.
 
 ## [1.3] (Android versionCode 114) - 2020-03-23
