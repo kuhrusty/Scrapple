@@ -5,6 +5,7 @@ format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+- Update versions on some dependencies.
 
 ## [1.3] (Android versionCode 114) - 2020-03-23
 
